@@ -1,0 +1,19 @@
+username = Eunice-Alswell
+password = alswellage
+DB = mongodb+srv://Eunice-Alswell:<password>@cluster0.v3ql7.mongodb.net/<dbname>
+
+
+
+
+simple form of creating express app
+const express = require('express');
+const app = express()
+
+app.get('/', (req, res) => {
+    res.status(200).send('<h1> Hello World </h1>')
+})
+
+app.listen(3100,() => {
+    console.log("server has started");
+});
+
